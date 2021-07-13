@@ -111,8 +111,94 @@ section two start
 }
 
 /* ------------------
+section three start
+-------------------- */
+
+/* 
+.section-one-image img {
+    width: 560px;
+    height: 440px;
+    transition: 0.3s ease transform;
+}
+
+.section-one-image img:hover {
+    transform: scale(1.1);
+} */
+
+.section-three-container {
+    text-align: center;
+}
+
+.section-three-container h2 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.section-three-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 5%;
+    place-items: center;
+    justify-content: center;
+}
+
+.section-three-images {
+    padding: 5% 10%;
+}
+
+.section-three-images img {
+    width: 50%;
+    transition: 0.5s ease transform;
+}
+
+.section-three-images img:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(7px 7px 7px #666666);
+}
+
+
+/* ------------------
+section four start
+-------------------- */
+.section-four-container {
+    padding: 5% 0;
+    margin-top: 7%;
+    background-color: #1f4e6fd9;
+    text-align: center;
+}
+
+.section-four-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.section-four-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 5%;
+    place-items: center;
+    justify-content: center;
+}
+
+.section-four-image {
+    padding: 5% 10%;
+}
+
+.section-four-image img {
+    width: 60%;
+    transition: 0.5s ease transform;
+}
+
+.section-four-image img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* ------------------
 footer section start
 -------------------- */
+
 .footer-content {
     margin: 63px auto;
     width: 483.87px;
@@ -225,6 +311,14 @@ CSS Media Query
 
     .section-two-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-three-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-four-content {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
