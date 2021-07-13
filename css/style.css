@@ -318,4 +318,11 @@ CSS Media Query
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .footer-content {
+        width: 80%;
+    }
+
+    .footer-content img {
+        width: 100%;
+    }
 }
