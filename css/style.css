@@ -76,6 +76,7 @@ section two start
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    justify-content: center;
     padding: 70px 190px;
 }
 
@@ -167,4 +168,63 @@ footer section start
 .fa-youtube {
     background: #bb0000;
     color: white;
+}
+
+/* ----------------
+CSS Media Query 
+-------------------*/
+@media only screen and (max-width:1024px) {
+
+    .section-one-container {
+        flex-direction: column;
+    }
+
+    .section-one-content {
+        margin: 10% 0;
+        padding: 0;
+        width: 50%;
+    }
+
+    .section-one-image {
+        margin: 5% 0;
+        padding: 0;
+        width: 50%;
+    }
+
+    .section-two-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10% 2%;
+    }
+
+    .section-two-content-wrapper {
+        width: 95%;
+        height: 95%;
+        padding: 25px;
+    }
+
+    .section-two-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .section-one-content {
+        width: 90%;
+    }
+
+    .section-one-image {
+        width: 100%;
+    }
+
+    .section-one-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-two-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
