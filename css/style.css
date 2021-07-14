@@ -11,6 +11,7 @@
 /* ------------------
 section one start
 -------------------- */
+
 .section-one-container {
     display: flex;
     align-items: center;
@@ -72,6 +73,7 @@ section one start
 /* ------------------
 section two start
 -------------------- */
+
 .section-two-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -114,17 +116,6 @@ section two start
 section three start
 -------------------- */
 
-/* 
-.section-one-image img {
-    width: 560px;
-    height: 440px;
-    transition: 0.3s ease transform;
-}
-
-.section-one-image img:hover {
-    transform: scale(1.1);
-} */
-
 .section-three-container {
     text-align: center;
 }
@@ -159,6 +150,7 @@ section three start
 /* ------------------
 section four start
 -------------------- */
+
 .section-four-container {
     padding: 5% 0;
     margin-top: 7%;
