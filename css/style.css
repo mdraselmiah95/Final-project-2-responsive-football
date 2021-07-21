@@ -219,6 +219,12 @@ section two start
 .section-two-image img {
     width: 300px;
     height: 256px;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+.section-two-image img:hover {
+    opacity: 1;
 }
 
 .section-two-content h3 {
@@ -269,6 +275,68 @@ section three start
 .section-three-images img:hover {
     transform: scale(1.1);
     filter: drop-shadow(7px 7px 7px #666666);
+}
+
+/* ------------------
+section four start
+-------------------- */
+.section-four-container {
+    display: flex;
+    align-items: center;
+    padding: 100px 150px 10px 150px;
+}
+
+.section-four-content {
+    width: 50%;
+    margin-right: 65px;
+}
+
+.section-four-content h2 {
+    color: #0A0826;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.section-four-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+
+.section-four-content a {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #0A0826;
+    background-color: transparent;
+    border: 2px solid crimson;
+    transition: 0.3s ease;
+}
+
+.section-four-content a:hover {
+    color: white;
+    background-color: crimson;
+}
+
+.section-four-image {
+    width: 50%;
+}
+
+.section-four-image img {
+    height: 427px;
+    width: 100%;
+    opacity: .5;
+    transition: .5s ease;
+}
+
+.section-four-image img:hover {
+    opacity: 1;
 }
 
 /* ------------------
@@ -406,6 +474,22 @@ CSS Media Query
         width: 100%;
     }
 
+    .section-four-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .section-four-content {
+        margin: 5% 0;
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .section-four-image {
+        width: 70%;
+    }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -432,6 +516,18 @@ CSS Media Query
 
     .section-five-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-four-content {
+        width: 80%;
+    }
+
+    .section-four-image {
+        width: 80%;
+    }
+
+    .section-four-content h2 {
+        font-size: 34px;
     }
 
     .footer-content {
